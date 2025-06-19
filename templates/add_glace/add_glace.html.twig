@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AddGlaceController!{% endblock %}
+
+{% block body %}
+
+{{ form_start(GlaceTypeForm) }}
+{{ form_widget(GlaceTypeForm) }}
+<button>Valider</button>
+{{ form_end(GlaceTypeForm) }}
+{% for message in app.flashes('succes') %}
+    <div class="alert alert-succes">
+        {{ message }}
+    </div>
+{% endfor %}
+{% endblock %}

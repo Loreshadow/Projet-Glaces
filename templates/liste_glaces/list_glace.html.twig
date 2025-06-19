@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ListeGlacesController!{% endblock %}
+
+{% block body %}
+<h1>Listes de nos glaces :</h1>
+{% for glace in glaces %}
+    <hr>    
+    <h2>Glace : {{glace.name}} </h2>
+{% endfor %}
+{% endblock %}
